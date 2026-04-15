@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Rwanda Tourism</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- ========== HEADER & NAVIGATION ========== -->
+    <header>
+        <div class="navbar-container">
+            <a href="../index.html" class="logo">
+                <img src="../assets/pic1.jpg" alt="Rwanda Tourism Logo" class="logo-img">
+                <span class="logo-text">Rwanda Tourism</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="report.html">Report</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="dark-mode-toggle">🌙 Dark Mode</button>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- ========== MAIN CONTENT ========== -->
+    <main>
+        <section>
+            <h2>Contact Information</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin: 2rem 0;">
+                <div style="background: var(--light-bg); padding: 2rem; border-radius: 10px; text-align: center; border-left: 5px solid var(--primary-color);">
+                    <h3 style="color: var(--primary-color); margin-bottom: 1rem;">📍 Address</h3>
+                    <p>Rwanda Tourism Office<br>
+                    KG 15 Avenue, Kigali<br>
+                    Rwanda, East Africa</p>
+                </div>
+                <div style="background: var(--light-bg); padding: 2rem; border-radius: 10px; text-align: center; border-left: 5px solid var(--primary-color);">
+                    <h3 style="color: var(--primary-color); margin-bottom: 1rem;">📞 Phone</h3>
+                    <p>Main Office: +250 788 123 456<br>
+                    Reservations: +250 788 987 654<br>
+                    Emergency: +250 700 111 222</p>
+                </div>
+                <div style="background: var(--light-bg); padding: 2rem; border-radius: 10px; text-align: center; border-left: 5px solid var(--primary-color);">
+                    <h3 style="color: var(--primary-color); margin-bottom: 1rem;">✉️ Email</h3>
+                    <p>General: info@rwandatourism.com<br>
+                    Bookings: bookings@rwandatourism.com<br>
+                    Support: support@rwandatourism.com</p>
+                </div>
+                <div style="background: var(--light-bg); padding: 2rem; border-radius: 10px; text-align: center; border-left: 5px solid var(--primary-color);">
+                    <h3 style="color: var(--primary-color); margin-bottom: 1rem;">⏰ Business Hours</h3>
+                    <p>Monday - Friday: 8:00 AM - 6:00 PM<br>
+                    Saturday: 9:00 AM - 2:00 PM<br>
+                    Sunday: Closed</p>
+                </div>
+                <div style="background: var(--light-bg); padding: 2rem; border-radius: 10px; text-align: center; border-left: 5px solid var(--primary-color);">
+                    <h3 style="color: var(--primary-color); margin-bottom: 1rem;">💬 WhatsApp</h3>
+                    <p>Quick Support Available<br>
+                    +250 788 123 456<br>
+                    Fast Response Times</p>
+                </div>
+                <div style="background: var(--light-bg); padding: 2rem; border-radius: 10px; text-align: center; border-left: 5px solid var(--primary-color);">
+                    <h3 style="color: var(--primary-color); margin-bottom: 1rem;">🌐 Social Media</h3>
+                    <p>Follow Us:<br>
+                    Facebook | Instagram | Twitter<br>
+                    YouTube Channel</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Send Us a Message</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Full Name *</label>
+                    <input type="text" id="name" name="name" placeholder="Your full name" required>
+                    <span class="error-message"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                    <span class="error-message"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number (Optional)</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+250 7XX XXX XXX">
+                    <span class="error-message"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="country">Country of Origin</label>
+                    <select id="country" name="country">
+                        <option value="">Select a country...</option>
+                        <option value="Rwanda">Rwanda</option>
+                        <option value="Uganda">Uganda</option>
+                        <option value="Kenya">Kenya</option>
+                        <option value="Tanzania">Tanzania</option>
+                        <option value="USA">USA</option>
+                        <option value="UK">UK</option>
+                        <option value="France">France</option>
+                        <option value="Germany">Germany</option>
+                        <option value="Canada">Canada</option>
+                        <option value="Australia">Australia</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject *</label>
+                    <input type="text" id="subject" name="subject" placeholder="Tour inquiry, hotel booking, etc." required>
+                    <span class="error-message"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" placeholder="Tell us about your travel plans and interests..." required></textarea>
+                    <span class="error-message"></span>
+                </div>
+
+                <button type="submit" class="cta-button" style="width: 100%; padding: 1rem; font-size: 1.1rem; margin-top: 1rem;">
+                    Send Message
+                </button>
+            </form>
+        </section>
+
+        <section style="background: var(--light-bg); padding: 3rem 2rem; border-radius: 10px;">
+            <h2>Why Contact Us?</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin: 2rem 0;">
+                <div style="text-align: center;">
+                    <h3 style="color: var(--primary-color); font-size: 2rem; margin-bottom: 0.5rem;">🎯</h3>
+                    <h4 style="color: var(--primary-color); margin-bottom: 0.5rem;">Expert Planning</h4>
+                    <p>Our team will help you plan the perfect Rwanda itinerary based on your interests and budget.</p>
+                </div>
+                <div style="text-align: center;">
+                    <h3 style="color: var(--primary-color); font-size: 2rem; margin-bottom: 0.5rem;">🤝</h3>
+                    <h4 style="color: var(--primary-color); margin-bottom: 0.5rem;">Personalized Service</h4>
+                    <p>We customize every aspect of your tour to ensure it meets your specific needs and preferences.</p>
+                </div>
+                <div style="text-align: center;">
+                    <h3 style="color: var(--primary-color); font-size: 2rem; margin-bottom: 0.5rem;">💰</h3>
+                    <h4 style="color: var(--primary-color); margin-bottom: 0.5rem;">Best Rates</h4>
+                    <p>As a direct operator, we offer competitive prices without hidden charges or markups.</p>
+                </div>
+                <div style="text-align: center;">
+                    <h3 style="color: var(--primary-color); font-size: 2rem; margin-bottom: 0.5rem;">🛡️</h3>
+                    <h4 style="color: var(--primary-color); margin-bottom: 0.5rem;">Peace of Mind</h4>
+                    <p>All tours are fully insured and backed by our satisfaction guarantee.</p>
+                </div>
+                <div style="text-align: center;">
+                    <h3 style="color: var(--primary-color); font-size: 2rem; margin-bottom: 0.5rem;">📱</h3>
+                    <h4 style="color: var(--primary-color); margin-bottom: 0.5rem;">24/7 Support</h4>
+                    <p>We're available around the clock to assist you before, during, and after your tour.</p>
+                </div>
+                <div style="text-align: center;">
+                    <h3 style="color: var(--primary-color); font-size: 2rem; margin-bottom: 0.5rem;">🌍</h3>
+                    <h4 style="color: var(--primary-color); margin-bottom: 0.5rem;">Local Expertise</h4>
+                    <p>Our guides are locals who know Rwanda intimately and share insider knowledge.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Frequently Asked Questions</h2>
+            <div style="display: grid; grid-template-columns: 1fr; gap: 1.5rem;">
+                <div style="background: var(--light-bg); padding: 1.5rem; border-radius: 10px; border-left: 5px solid var(--primary-color);">
+                    <h4 style="color: var(--primary-color); margin-bottom: 0.5rem;">Q: How far in advance should I book a tour?</h4>
+                    <p>A: We recommend booking at least 3-4 weeks in advance for popular tours like gorilla trekking. However, we'll do our best to accommodate last-minute requests.</p>
+                </div>
+                <div style="background: var(--light-bg); padding: 1.5rem; border-radius: 10px; border-left: 5px solid var(--primary-color);">
+                    <h4 style="color: var(--primary-color); margin-bottom: 0.5rem;">Q: What's your cancellation policy?</h4>
+                    <p>A: Cancellations made 14 days before the tour date receive a full refund. Cancellations within 14 days may have fees depending on circumstances.</p>
+                </div>
+                <div style="background: var(--light-bg); padding: 1.5rem; border-radius: 10px; border-left: 5px solid var(--primary-color);">
+                    <h4 style="color: var(--primary-color); margin-bottom: 0.5rem;">Q: Do you offer group discounts?</h4>
+                    <p>A: Yes! Groups of 8 or more qualify for special discounts. Contact us for a custom group quote.</p>
+                </div>
+                <div style="background: var(--light-bg); padding: 1.5rem; border-radius: 10px; border-left: 5px solid var(--primary-color);">
+                    <h4 style="color: var(--primary-color); margin-bottom: 0.5rem;">Q: What payment methods do you accept?</h4>
+                    <p>A: We accept credit cards, bank transfers, and mobile money. A 30% deposit secures your booking with the balance due 2 weeks before the tour.</p>
+                </div>
+                <div style="background: var(--light-bg); padding: 1.5rem; border-radius: 10px; border-left: 5px solid var(--primary-color);">
+                    <h4 style="color: var(--primary-color); margin-bottom: 0.5rem;">Q: Is travel insurance included?</h4>
+                    <p>A: Yes, basic travel insurance is included. We recommend purchasing additional comprehensive travel insurance through your provider.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ========== SUCCESS MODAL ========== -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h3 style="color: var(--primary-color); margin-bottom: 1rem;">✅ Thank You!</h3>
+            <p>Your message has been received successfully.</p>
+            <p style="margin-top: 1rem; font-size: 0.95rem;">We will review your inquiry and get back to you within 24 hours at the email address provided.</p>
+        </div>
+    </div>
+
+    <!-- ========== FOOTER ========== -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>About Us</h4>
+                <p>Rwanda Tourism is your gateway to unforgettable African adventures. We offer expertly curated tours and experiences across Rwanda's most stunning destinations.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <p>📍 Kigali, Rwanda</p>
+                <p>📞 +250 788 123 456</p>
+                <p>✉️ info@rwandatourism.com</p>
+                <p>⏰ Mon - Fri: 8:00 AM - 6:00 PM</p>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">YouTube</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Rwanda Tourism. All rights reserved. | Designed with ❤️ for travelers</p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
